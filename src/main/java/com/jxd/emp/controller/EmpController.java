@@ -60,6 +60,7 @@ public class EmpController {
     @ResponseBody
     public List<Emp> getAll(){
         return empService.getAll();
+
     }
 
     @RequestMapping("/getDept")
