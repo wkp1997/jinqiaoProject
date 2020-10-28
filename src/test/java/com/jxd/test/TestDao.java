@@ -3,7 +3,7 @@ package com.jxd.test;
 import com.jxd.emp.EmpApplication;
 import com.jxd.emp.mapper.IDeptMapper;
 import com.jxd.emp.mapper.IEmpMapper;
-import com.jxd.emp.model.Dept;
+import com.jxd.emp.model.Class;
 import com.jxd.emp.model.Emp;
 
 import org.junit.Test;
@@ -44,7 +44,7 @@ public class TestDao {
 
     @Test
     public void testBoot(){
-        List<Dept> list = deptMapper.selectList(null);
+        List<Class> list = deptMapper.selectList(null);
         System.out.println(list.size());
     }
 }

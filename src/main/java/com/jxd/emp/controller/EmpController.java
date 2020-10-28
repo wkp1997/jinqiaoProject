@@ -1,6 +1,6 @@
 package com.jxd.emp.controller;
 
-import com.jxd.emp.model.Dept;
+import com.jxd.emp.model.Class;
 import com.jxd.emp.model.Emp;
 import com.jxd.emp.service.IDeptService;
 import com.jxd.emp.service.IEmpService;
@@ -65,7 +65,7 @@ public class EmpController {
 
     @RequestMapping("/getDept")
     @ResponseBody
-    public List<Dept> getDept(){
+    public List<Class> getDept(){
         //创建一个条件构造器对象
 
         return deptService.list();
@@ -86,7 +86,7 @@ public class EmpController {
     @RequestMapping("/welcome")
     public String welcome(Model model){
         model.addAttribute("msg","</h1>改变了模板位置</h1>");
-        List<Dept> list = deptService.list();
+        List<Class> list = deptService.list();
         model.addAttribute("list",list);
         return "viewcome.html";
     }
